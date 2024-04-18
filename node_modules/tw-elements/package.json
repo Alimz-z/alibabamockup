@@ -1,0 +1,14 @@
+{
+  "name": "tw-elements",
+  "version": "2.0.0",
+  "type": "module",
+  "homepage": "https://tw-elements.com/",
+  "repository": "https://github.com/mdbootstrap/TW-Elements",
+  "author": "MDBootstrap",
+  "license": "SEE LICENSE IN <License.txt>",
+  "style": "./css/tw-elements.min.css",
+  "sass": "./src/css/tailwind.scss",
+  "main": "./js/tw-elements.umd.min.js",
+  "module": "./js/tw-elements.es.min.js",
+  "types": "./types/tw-elements.d.ts"
+}

@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @font-face {
+    font-family: "dana hair";
+    font-style: normal;
+    font-weight: 10;
+    src: url("/fonts/Dana/woff2/Dana-Hairline.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("//fonts/Dana/woff/Dana-Hairline.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana thin";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/Dana/woff2/Dana-Thin.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-Thin.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana Ultralight";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/fonts/Dana/woff2/Dana-UltraLight.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+        url("/fonts/Dana/woff/Dana-UltraLight.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana light";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/Dana/woff2/Dana-Light.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-Light.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/Dana/woff2/Dana-Medium.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-Medium.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana DemiBold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/Dana/woff2/Dana-DemiBold.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-DemiBold.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana ExtraBold";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/fonts/Dana/woff2/Dana-ExtraBold.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-ExtraBold.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana Black";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/Dana/woff2/Dana-Black.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-Black.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana ExtraBlack";
+    font-style: normal;
+    font-weight: 930;
+    src: url("/fonts/Dana/woff2/Dana-ExtraBlack.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+        url("/fonts/Dana/woff/Dana-ExtraBlack.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: dana Heavy;
+    font-style: normal;
+    font-weight: 960;
+    src: url("/fonts/Dana/woff2/Dana-Heavy.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("//fonts/Dana/woff/Dana-Heavy.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: dana Fat;
+    font-style: normal;
+    font-weight: 990;
+    src: url("/fonts/Dana/woff2/Dana-Fat.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-Fat.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana Extra Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/fonts/Dana/woff2/Dana-ExtraBold.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-ExtraBold.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+  @font-face {
+    font-family: "dana Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/Dana/woff2/Dana-Regular.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("/fonts/Dana/woff/Dana-Regular.woff")
+        format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+
+  @font-face {
+    font-family: Morabba Ultralight;
+    font-style: normal;
+    font-weight: 200;
+    src: url("/fonts/woff/Morabba-UltraLight.woff") format("woff"),
+      url("/fonts/woff2/Morabba-UltraLight.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: Morabba light;
+    font-style: normal;
+    font-weight: 300;
+    src: url("./fonts/woff/Morabba-light.woff") format("woff"),
+      url("./fonts/woff2/Morabba-light.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Morabba medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/woff/Morabba-medium.woff") format("woff"),
+      url("/fonts/woff2/Morabba-medium.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Morabba semibold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/woff/Morabba-semibold.woff") format("woff"),
+      url("/fonts/woff2/Morabba-semibold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Morabba trabold";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/fonts/woff/Morabba-e trabold.woff") format("woff"),
+      url("/fonts/woff2/Morabba-extrabold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Morabba black";
+    font-style: normal;
+    font-weight: 850;
+    src: url("/fonts/woff/Morabba-black.woff") format("woff"),
+      url("/fonts/woff2/Morabba-black.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Morabba Heavy";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/woff/Morabba-Heavy.woff") format("woff"),
+      url("/fonts/woff2/Morabba-Heavy.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Morabba bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/fonts/woff/Morabba-bold.woff") format("woff"),
+      url("/fonts/woff2/Morabba-bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: Morabba regular;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/woff/Morabba-regular.woff") format("woff"),
+      url("/fonts/woff2/Morabba-regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX thin";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/woff/IRANSansX-thin.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-thin.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX UltraLight";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/fonts/woff/IRANSansX-UltraLight.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-UltraLight.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: IRANSansX light;
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/woff/IRANSansX-light.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-light.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/woff/IRANSansX-medium.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-medium.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX demibold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/woff/IRANSansX-demibold.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-demibold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX extrabold";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/fonts/woff/IRANSansX-extrabold.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-extrabold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX black";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/woff/IRANSansX-black.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-black.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/fonts/woff/IRANSansX-bold.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "IRANSansX regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/woff/IRANSansX-regular.woff") format("woff"),
+      url("/fonts/woff2/IRANSansX-regular.woff2") format("woff2");
+  }
+}
+
+

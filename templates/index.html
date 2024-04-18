@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <header class="h-full">
+      <div class="w-[85%] mx-auto flex items-center gap-4 mt-8 justify-between">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTMyIDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNODMuODkxOCAyOS4xMDk1QzgzLjg5MTggMzMuMzQyOCA4MS44NTUgMzcuMzA4NSA3Ny4xMDU0IDM3LjMwODVDNzUuMzE3NCAzNy4zMDg1IDc0LjA2MDIgMzYuNjk4NiA3My4yMDg3IDM1Ljg1NTdMNzIuODE4OSAzNy4zMDg1SDcwLjUwNTlWMTYuMzkyNEg3My40NDAyVjI5LjMwOEM3My40NDAyIDMxLjkyNDUgNzQuMDczMiAzNC43NTk2IDc3LjIxMTggMzQuNzQzOEM4MC4yNTU1IDM0LjcyOTQgODAuOTI0NCAzMS43NzM0IDgwLjkyNDQgMjkuMzA4QzgwLjkyNDQgMjYuODQyNSA4MC4yNTQxIDIzLjkwNTMgNzcuMjEwNCAyMy44OTIzQzc2LjU3MTUgMjMuODk5NSA3NS45Mzg3IDI0LjAxNzggNzUuMzQwNCAyNC4yNDE5VjIxLjg1NjlDNzYuMTUxMSAyMS41MzQgNzcuMDEyNiAyMS4zNTc3IDc3Ljg4NSAyMS4zMzYyQzgyLjA0NDkgMjEuMzM2MiA4My44OTE4IDI1LjQ0NTggODMuODkxOCAyOS4xMDk1Wk01Ny4yOTgyIDM3LjMwODVINjAuMjM0MVYxNi4zOTI0SDU3LjI5ODJWMzcuMzA4NVpNMTA5LjgwOSAyMS4zNDJDMTA4LjkzNyAyMS4zNjM1IDEwOC4wNzUgMjEuNTM5OCAxMDcuMjY1IDIxLjg2MjdWMjQuMjQ3NkMxMDcuODYzIDI0LjAyMzQgMTA4LjQ5NiAyMy45MDUxIDEwOS4xMzUgMjMuODk4MUMxMTIuMTc4IDIzLjkxMSAxMTIuODQ5IDI2Ljg0OTcgMTEyLjg0OSAyOS4zMTM3QzExMi44NDkgMzEuNzc3OCAxMTIuMTc3IDM0LjczMDkgMTA5LjEyOSAzNC43NDM4QzEwNS45OSAzNC43NTk2IDEwNS4zNTcgMzEuOTI0NSAxMDUuMzU3IDI5LjMwOFYxNi4zOTI0SDEwMi40MjNWMzcuMzA5OUgxMDQuNzM2TDEwNS4xMjQgMzUuODU3MUMxMDUuOTc3IDM2LjcwMDEgMTA3LjIzNSAzNy4zMDk5IDEwOS4wMjMgMzcuMzA5OUMxMTMuNzY5IDM3LjMwOTkgMTE1LjgwOSAzMy4zNDI4IDExNS44MDkgMjkuMTEwOUMxMTUuODA5IDI1LjQ0NTggMTEzLjk2MiAyMS4zMzYyIDEwOS44MDkgMjEuMzM2MlYyMS4zNDJaTTEzMC42NjcgMzMuMTgzMVYyNy43MDEzQzEzMC42NjcgMjMuMzg2IDEyNy44ODUgMjEuMzQ5MiAxMjQuNjc4IDIxLjM0OTJDMTIxLjI5MSAyMS4zNDkyIDExOC45MSAyMy41NSAxMTguOTEgMjMuNTVMMTIwLjMxMSAyNS41NTIzQzEyMC42MjggMjUuMjk5MSAxMjIuMzExIDI0LjAzOSAxMjQuNTE3IDI0LjAzOUMxMjYuNCAyNC4wMzkgMTI3LjkyNiAyNC45MDIxIDEyNy45MjYgMjcuNzk0OFYzMS4yMDI0QzEyNy45MjYgMzMuNzQ5OCAxMjUuMzM3IDM0Ljg0MyAxMjMuNTkxIDM0Ljg0M0MxMjIuMDM5IDM0Ljg0MyAxMjAuODk4IDM0LjIyMTYgMTIwLjg5OCAzMi44NDc5QzEyMC44OTggMzAuNTIyIDEyNC4wOTIgMjkuODI3MyAxMjYuMDE5IDI5LjkyNTFWMjcuNjgyNkMxMjEuNzk0IDI3LjQ2NTQgMTE4LjAwNiAyOS4yMjE3IDExOC4wMDYgMzMuMDIzNEMxMTguMDA2IDM1LjY2NzMgMTIwLjA1NyAzNy4zMDQyIDEyMy4xMjkgMzcuMzA0MkMxMjUuNDMxIDM3LjMwNDIgMTI3LjQyIDM2LjQxNjcgMTI4LjM5MiAzNS40NDcyQzEyOC45MTMgMzYuNzc5MiAxMzAuMzI3IDM3LjMwNDIgMTMxLjQyNSAzNy4zMDQyTDEzMiAzNS4xNTgxQzEzMS4wNzcgMzQuOTU2NyAxMzAuNjcxIDM0LjUxNTEgMTMwLjY3MSAzMy4xNzc0TDEzMC42NjcgMzMuMTgzMVpNOTguNzQ5MyAzMy4xODMxVjI3LjcwMTNDOTguNzQ5MyAyMy4zODYgOTUuOTY3NCAyMS4zNDkyIDkyLjc2MTIgMjEuMzQ5MkM4OS4zNzM3IDIxLjM0OTIgODYuOTkzMSAyMy41NSA4Ni45OTMxIDIzLjU1TDg4LjM5NTYgMjUuNTUyM0M4OC43MTA2IDI1LjI5OTEgOTAuMzkzNSAyNC4wMzkgOTIuNjAwMSAyNC4wMzlDOTQuNDgzIDI0LjAzOSA5Ni4wMTA2IDI0LjkwMjEgOTYuMDEwNiAyNy43OTQ4VjMxLjIwMjRDOTYuMDEwNiAzMy43NDk4IDkzLjQyMTQgMzQuODQzIDkxLjY3MzcgMzQuODQzQzkwLjEyMTcgMzQuODQzIDg4Ljk4MSAzNC4yMjE2IDg4Ljk4MSAzMi44NDc5Qzg4Ljk4MSAzMC41MjIgOTIuMTc0MyAyOS44MjczIDk0LjEwMTggMjkuOTI1MVYyNy42ODI2Qzg5Ljg3NzEgMjcuNDY1NCA4Ni4wODgzIDI5LjIyMTcgODYuMDg4MyAzMy4wMjM0Qzg2LjA4ODMgMzUuNjY3MyA4OC4xMzk1IDM3LjMwNDIgOTEuMjEyIDM3LjMwNDJDOTMuNTEzNSAzNy4zMDQyIDk1LjUwMjggMzYuNDE2NyA5Ni40NzUyIDM1LjQ0NzJDOTYuOTk1OSAzNi43NzkyIDk4LjQwOTkgMzcuMzA0MiA5OS41MDc0IDM3LjMwNDJMMTAwLjA4MyAzNS4xNTgxQzk5LjE1OTMgMzQuOTU2NyA5OC43NTM3IDM0LjUxNTEgOTguNzUzNyAzMy4xNzc0TDk4Ljc0OTMgMzMuMTgzMVpNNTMuNjI1OSAzMy4xODMxVjI3LjcwMTNDNTMuNjI1OSAyMy4zODYgNTAuODQ0IDIxLjM0OTIgNDcuNjM3OCAyMS4zNDkyQzQ0LjI1MDMgMjEuMzQ5MiA0MS44Njk3IDIzLjU1IDQxLjg2OTcgMjMuNTVMNDMuMjc2NSAyNS41NTIzQzQzLjU5MTUgMjUuMjk5MSA0NS4yNzU5IDI0LjAzOSA0Ny40ODEgMjQuMDM5QzQ5LjM2NTMgMjQuMDM5IDUwLjg5MTUgMjQuOTAyMSA1MC44OTE1IDI3Ljc5NDhWMzEuMjAyNEM1MC44OTE1IDMzLjc0OTggNDguMzAyMyAzNC44NDMgNDYuNTU0NiAzNC44NDNDNDUuMDA0IDM0Ljg0MyA0My44NjMzIDM0LjIyMTYgNDMuODYzMyAzMi44NDc5QzQzLjg2MzMgMzAuNTIyIDQ3LjA1NTIgMjkuODI3MyA0OC45ODQxIDI5LjkyNTFWMjcuNjgyNkM0NC43NTggMjcuNDcxMSA0MC45NzUgMjkuMjI3NCA0MC45NzUgMzMuMDI5MkM0MC45NzUgMzUuNjczIDQzLjAyNjIgMzcuMzA5OSA0Ni4wOTg3IDM3LjMwOTlDNDguNDAwMSAzNy4zMDk5IDUwLjM4OCAzNi40MjI0IDUxLjM2MDQgMzUuNDUyOUM1MS44ODI2IDM2Ljc4NDkgNTMuMjk1MSAzNy4zMDk5IDU0LjM5NDEgMzcuMzA5OUw1NC45Njk0IDM1LjE2MzhDNTQuMDM1OSAzNC45NTY3IDUzLjYzMzEgMzQuNTE1MSA1My42MzMxIDMzLjE3NzRMNTMuNjI1OSAzMy4xODMxWk02My44OTc3IDM3LjMxNTdINjYuODMyMVYyMS44MjI0SDYzLjg5NzdWMzcuMzE1N1pNNjMuODk3NyAxOS4zMzU0SDY2LjgzMjFWMTYuMzkyNEg2My44OTc3VjE5LjMzNTRaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMjcuMjMwOCAzNS43NTc5QzI3LjA4NyAzNi4wMTgyIDI2Ljc0MDMgMzYuMTM2MiAyNi40MzI1IDM2LjIyMzlMMjIuOTI0MiAzNy4yMTVDMjIuNjE2NCAzNy4zMDEzIDIyLjIzMjMgMzcuMzcxOCAyMS45NzQ4IDM3LjIyNTFDMjEuNzE3MyAzNy4wNzg0IDIxLjU4OTMgMzYuNzE0NCAyMS41MDczIDM2LjQwOEMxNi40MTI0IDE3LjQwMzYgMTUuNzA5IDEzLjMwNjkgMTMuNjU5MyAxMy4zMDY5QzExLjYwOTUgMTMuMzA2OSAxMC45MTE5IDE3LjQwMzYgNS44MTEyNCAzNi40MDhDNS43MjkyNSAzNi43MTQ0IDUuNTk4MzUgMzcuMDc4NCA1LjM0Mzc1IDM3LjIyNTFDNS4wODkxNSAzNy4zNzE4IDQuNzAwNzcgMzcuMzAxMyA0LjM5Mjk1IDM3LjIxNUwwLjg4NDYyOSAzNi4yMjM5QzAuNTc2ODA2IDM2LjEzNjIgMC4yMzE1ODcgMzYuMDE4MiAwLjA4Nzc0NDQgMzUuNzU3OUMtMC4wNTYwOTgyIDM1LjQ5NzUgMC4wMDcxOTI1NCAzNS4xMTYzIDAuMDg3NzQ0NCAzNC44MTg2QzUuMzAyMDQgMTUuNDY3NSA4LjIxNDg0IDEwIDEzLjY1OTMgMTBDMTkuMTAzNyAxMCAyMi4wMjIzIDE1LjQ2NiAyNy4yMjk0IDM0LjgxODZDMjcuMzA5OSAzNS4xMTYzIDI3LjM3MDQgMzUuNTA2MiAyNy4yMzA4IDM1Ljc1NzlaIiBmaWxsPSIjRkRCOTEzIi8+CjxwYXRoIGQ9Ik0zMC4zNDc5IDIzLjUzNDFDMzAuMzQ0NyAyMy43MjAzIDMwLjMwMjEgMjMuOTAzNyAzMC4yMjI4IDI0LjA3MjFMMzAuMDc4OSAyNC40NzA2QzMwLjAxNTggMjQuNzA2MSAyOS44NzI5IDI0LjkxMjUgMjkuNjc0NyAyNS4wNTQ2QzI5LjQ0MzYgMjUuMTUxNyAyOS4xODYxIDI1LjE2NjQgMjguOTQ1NCAyNS4wOTYzQzI0LjM3MzggMjQuMDg3NCAxOS41OTQ4IDI0LjY3MDMgMTUuMzk5NiAyNi43NDg0QzExLjIwNDUgMjguODI2NSA3Ljg0NSAzMi4yNzUxIDUuODc3NCAzNi41MjMxQzUuNzMzNTYgMzYuODM5NiA1LjUwNjI5IDM3LjMwOTkgNC45OTQyMSAzNy4zMDk5QzQuNzg5MTggMzcuMzA5MSA0LjU4NTQ4IDM3LjI3NzEgNC4zOTAwNyAzNy4yMTVMMC44ODE3NTYgMzYuMjIzOUgwLjg3MzEyNUMwLjQ2NzQ4OSAzNi4xMDg5IDAgMzUuOTUyMSAwIDM1LjQwNEMwLjAxNDk5MTIgMzUuMTY2OSAwLjA3OTY4MjkgMzQuOTM1NiAwLjE4OTg3MyAzNC43MjUxQzIuNjgyNTggMjkuMzgyMiA3LjEwNzkgMjUuMTgyNyAxMi41NzQgMjIuOTczMUMxOC4wNDAxIDIwLjc2MzUgMjQuMTQwNiAyMC43MDggMjkuNjQ1OSAyMi44MTc4QzI5LjkxOTIgMjIuOTE4NSAzMC4zNDc5IDIzLjA3OTYgMzAuMzQ3OSAyMy41MzQxWiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzI1NzRfODIwOCkiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8yNTc0XzgyMDgiIHgxPSIwLjAwMjg3Njg1IiB5MT0iMjkuMjg5MyIgeDI9IjMwLjM0NzkiIHkyPSIyOS4yODkzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIG9mZnNldD0iMC4zIiBzdG9wLWNvbG9yPSIjRkRCOTEzIi8+CjxzdG9wIG9mZnNldD0iMC43NSIgc3RvcC1jb2xvcj0iI0Y3OTQxRiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo="
+          alt=""
+        />
+        <ul
+          class="child:flex flex gap-12 items-center mr-9 child:font-dana-medium child:gap-4"
+        >
+        <div>
+          <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-black focus:outline-none  font-iransans-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">بلیط  <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+            </button>
+            
+            <!-- Dropdown menu -->
+            <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 child:font-iransans-medium">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">پرواز داخلی</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">پرواز خارجی</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">قطار</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">اتوبوس</a>
+                  </li>
+                </ul>
+            </div>
+            
+        
+        </div>
+          <hr class="bg-gray-600 rotate-90 w-8 inline" />
+          <li>
+            <a href="#" class="flex">
+              <p>اقامت</p>
+              <box-icon name="chevron-down"></box-icon>
+            </a>
+          </li>
+          <hr class="bg-gray-500 rotate-90 w-6 inline" />
+          <li>
+            <p>تور</p>
+            <a href="#">
+              <box-icon name="chevron-down"></box-icon>
+            </a>
+          </li>
+          <hr class="bg-gray-500 rotate-90 w-6 inline" />
+          <li>
+            <p>ویزا</p>
+            <a href="#">
+              <box-icon name="chevron-down"></box-icon>
+            </a>
+          </li>
+          <hr class="bg-gray-500 rotate-90 w-6 inline" />
+          <li>
+            <p>بیشتر</p>
+            <a href="#">
+              <box-icon name="chevron-down"></box-icon>
+            </a>
+          </li>
+        </ul>
+        <div
+          class="flex gap-6 mr-10 child:font-iransans-medium items-center justify-center child:flex child:gap-4"
+        >
+          <div class="">
+            <box-icon name="help-circle" color="gray"></box-icon>
+            <p>مرکز پشتیبانی آنلاین</p>
+          </div>
+          <div>
+            <box-icon type="solid" name="briefcase-alt"></box-icon>
+            سفر های من
+          </div>
+          <div>
+            <box-icon name="universal-access"></box-icon>
+            ورود | ثبت نام
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="bg-yellow-200 w-full p-5 flex justify-center gap-40 items-center"
+    >
+      <p class="font-iransans-medium">
+        لطفا برای اطمینان از برقراری پروازهای داخلی، قبل از حرکت وبسایت فرودگاه
+        مهرآباد را بررسی کنید.
+      </p>
+
+      <p class="text-xl inline-block cursor-pointer">x</p>
+    </div>
+
+    <img
+      src="https://cdn.alibaba.ir/h2/desktop/assets/images/hero/hero-e1fa22fb.webp"
+      alt=""
+      class="absolute -z-10"
+    />
+
+    <div
+      class="bg-white w-[80%] mx-auto p-10 border border-gray-300 rounded-xl z-20 mt-80 relative"
+    >
+      <div
+        class="rounded-md justify-around flex child:flex child:flex-col child:items-center child:font-dana-demibold child:gap-4 gap-20"
+      >
+        <div>
+          <box-icon
+            name="paper-plane"
+            color="#7b7979"
+            class="scale-[1.5]"
+          ></box-icon>
+          <p>پرواز داخلی</p>
+        </div>
+        <div>
+          <box-icon
+            name="paper-plane"
+            color="#7b7979"
+            class="scale-[1.5]"
+          ></box-icon>
+          <p>پرواز خارجی</p>
+        </div>
+        <div>
+          <box-icon name="train" color="#7b7979" class="scale-[1.5]"></box-icon>
+          <p>قطار</p>
+        </div>
+        <div>
+          <box-icon
+            name="bus-school"
+            color="#7b7979"
+            class="scale-[1.5]"
+          ></box-icon>
+          <p>اتوبوس</p>
+        </div>
+        <div>
+          <box-icon
+            name="briefcase"
+            color="#7b7979"
+            class="scale-[1.5]"
+          ></box-icon>
+          <p>تور</p>
+        </div>
+        <div>
+          <box-icon name="hotel" color="#7b7979" class="scale-[1.5]"></box-icon>
+          <p>هتل</p>
+        </div>
+        <div>
+          <box-icon
+            name="building-house"
+            color="#7b7979"
+            class="scale-[1.5]"
+          ></box-icon>
+          <p>ویلا</p>
+        </div>
+      </div>
+      <hr class="w-full" />
+      <div
+        class="border border-gray-300 rounded-3xl w-32 child:flex items-center cursor-pointer child:justify-center mt-7 mr-7"
+      >
+        <div>
+          <p>یک طرفه</p>
+          <box-icon name="chevron-down"></box-icon>
+        </div>
+      </div>
+      <div class="flex justify-around mt-16">
+        <div class="flex gap-3">
+          <input
+            type="text"
+            placeholder="مبدا(شهر)"
+            class="border border-gray-300 rounded-md h-10 pr-4 font-iransans-demibold"
+          />
+          <input
+            type="text"
+            placeholder="مقصد(شهر)"
+            class="border border-gray-300 rounded-md h-10 pr-4 font-iransans-demibold"
+          />
+        </div>
+
+        <div class="flex gap-3">
+          <input
+            type="text"
+            placeholder="تاریخ رفت"
+            class="border border-gray-300 rounded-md h-10 pr-4 font-iransans-demibold"
+          />
+          <input
+            type="text"
+            placeholder="تاریخ برگشت"
+            class="border border-gray-300 rounded-md h-10 pr-4 font-iransans-demibold"
+          />
+        </div>
+        <div class="flex gap-3">
+          <input
+            type="text"
+            placeholder="مسافران"
+            class="border border-gray-300 rounded-md h-10 pr-4 font-iransans-demibold"
+          />
+          <button
+            class="bg-yellow-400 p-3 rounded-md h-10 flex items-center justify-center w-32"
+          >
+            جستجو
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main class="w-[80%] mx-auto mt-10">
+      <h1 class="font-iransans-extrabold">سایر خدمات علی بابا</h1>
+
+      <div
+        class="flex child:flex items-center justify-around child:items-center child:font-iransans-medium child:gap-2 border rounded-xl p-4 mt-5 child:cursor-pointer"
+      >
+        <div>
+          <img
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/safarcard-3dc2c4c4.svg"
+            alt=""
+          />
+          <p>سفر کارت (سازمانی)</p>
+        </div>
+        <hr class="bg-gray-600 rotate-90 w-8 inline" />
+        <div>
+          <img
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/insurance-icon-bb51c425.svg"
+            alt=""
+          />
+          <p>بیمه مسافرتی</p>
+        </div>
+        <hr class="bg-gray-600 rotate-90 w-8 inline" />
+        <div>
+          <img
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/visa-icon-d8507c8e.svg"
+            alt=""
+          />
+          <p>ویزای سفر</p>
+        </div>
+        <hr class="bg-gray-600 rotate-90 w-8 inline" />
+        <div>
+          <img
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/gtour-icon-5e641f1b.svg"
+            alt=""
+          />
+          <p>تور گروهی</p>
+        </div>
+      </div>
+
+      <div>
+        <div
+          id="controls-carousel"
+          class="overflow-hidden relative mx-auto w-[50%] mt-12 child:cursor-pointer"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.alibaba.ir/cms/uploads/Winter_Campaign_Cardview_Banner_Desktop_02_11_16_4252e7299f.jpg"
+                class="absolute block h-[224px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="duration-700 ease-in-out" data-carousel-item="active">
+              <img
+                src="https://cdn.alibaba.ir/cms/uploads/Safir_Cardview_Banner_Desktop_02_11_25_1385e307de.png"
+                class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full h-[224px]"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.alibaba.ir/cms/uploads/Safar_Card_Cardview_Banner_Desktop_02_09_22_ed374215f4.png"
+                class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full h-[224px]"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.alibaba.ir/cms/uploads/Delsey_Cardview_Banner_Desktop_02_12_23_862cc16662.png"
+                class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full h-[224px]"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="border flex mt-12 justify-around items-center">
+          <img
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/app-mobile/qrcode-56155e39.png"
+            alt=""
+            class="w-[148px] h-[168px]"
+          />
+          <div class="flex flex-col justify-evenly gap-10">
+            <div
+              class="flex flex-col justify-around child:font-iransans-medium gap-6"
+            >
+              <p>اپلیکیشن علی‌بابا</p>
+              <p>سریع‌تر و مطمئن‌تر به سفر بروید ‌</p>
+              <div class="flex items-center text-blue-700">
+                مشاهده لینک های دانلود
+                <box-icon
+                  name="chevron-down"
+                  class="rotate-90"
+                  color="blue"
+                ></box-icon>
+              </div>
+            </div>
+            <div class="flex">
+              <box-icon type="logo" name="android" color="gray"></box-icon>
+              <box-icon name="apple" type="logo" color="gray"></box-icon>
+              <p class="font-iransans-medium">قابلیت نصب روی Android و iOS</p>
+            </div>
+          </div>
+          <img
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/app-mobile/app-mobile@4x-e3e3b7dc.webp"
+            class="w-[334px] h-[294px] my-2"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <div
+          id="accordion-open"
+          data-accordion="open"
+          class="child:font-dana-medium"
+        >
+          <h2 id="accordion-open-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-open-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-open-body-1"
+            >
+              <span class="flex items-center"
+                ><svg
+                  class="w-5 h-5 me-2 shrink-0 text-blue-700"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                چند روز قبل از پرواز، بلیط هواپیما را بخریم؟</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-1"
+            class="hidden"
+            aria-labelledby="accordion-open-heading-1"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات
+                قیمت بلیط هواپیما در روزهای نزدیک به پرواز ارزان‌تر می‌شود.
+                بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو آنلاین بلیط
+                هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر
+                در ایام پرسفر نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط
+                هواپیما را انجام دهید.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-open-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-open-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-open-body-2"
+            >
+              <span class="flex items-center"
+                ><svg
+                  class="w-5 h-5 me-2 shrink-0 text-blue-700"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  ></path></svg
+                >در هر پرواز، میزان بار مجاز چقدر است؟</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-2"
+            class="hidden"
+            aria-labelledby="accordion-open-heading-2"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                میزان مجاز بار به کلاس پرواز و کلاس نرخی بلیط بستگی دارد. هنگام
+                خرید آنلاین بلیط هواپیما می‌توانید میزان بار مجاز را در اطلاعات
+                بلیط ببینید. طبیعی است که اگر میزان بارتان بیش از حد مجاز باشد،
+                باید جریمه پرداخت کنید.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-open-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-open-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-open-body-3"
+            >
+              <span class="flex items-center"
+                ><svg
+                  class="w-5 h-5 me-2 shrink-0 text-blue-700"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                نرخ بلیط هواپیما برای نوزادان و کودکان زیر ۱۲ سال چگونه
+                است؟</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-3"
+            class="hidden"
+            aria-labelledby="accordion-open-heading-3"
+          >
+            <div
+              class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                نرخ بلیط کودکان و نوزادان به کلاس پرواز و کلاس نرخی بستگی دارد.
+                به صورت کلی، قیمت بلیط مسافر کودک (2 الی 12 سال) معادل 50 الی
+                100 درصد بلیط بزرگسال، و قیمت بلیط مسافر نوزاد (تا دو سال) 10
+                درصد بلیط بزرگسال است. هنگام تهیه بلیط
+                <a href="" class="text-blue-500">هواپیما</a> به این نکته توجه
+                داشته باشید.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="child:font-iransans-light mt-12">
+        <div class="flex justify-between">
+          <div>
+            <p class="font-iransans-bold">بلیط هواپیما</p>
+            <p>
+              علی‌بابا بزرگترین و معتبرترین سایت خرید اینترنتی بلیط هواپیما ،
+              قطار و اتوبوس در کشور است که از سال ۱۳۹۳ کار خود را شروع کرده و در
+              این مدت توانسته رضایت درصد قابل توجهی از کاربران را به دست بیاورد.
+              در ابتدا، فروش بلیط پرواز داخلی در دستور کار علی‌بابا قرار داشت؛
+              اما به مرور امکان خرید سایر محصولات گردشگری نیز به علی‌بابا اضافه
+              شد.
+            </p>
+            <p class="font-iransans-bold mt-3">
+              مزایای خرید بلیط هواپیما از علی‌بابا
+            </p>
+            <p>
+              شما با خرید بلیط هواپیما از علی‌بابا با سامانه مطمئن و معتبری
+              روبه‌رو هستید که تمام نیازهایتان را پاسخ می‌دهد. برای خرید آنلاین
+              بلیط هواپیما در علی‌بابا کافیست مبدا، مقصد و تاریخ پرواز خود را
+              انتخاب کنید. پس از کلیک روی جستجو، لیست قیمت بلیط هواپیما به مقصد
+              مورد نظر شما ظاهر می‌شود. در این لیست، انتخابهای متعددی پیش روی
+              شماست. برای اینکه گزینه‌ ها را برای خرید بلیط هواپیما محدودتر
+              کنید، علی‌بابا ابزارهای مختلفی در اختیار شما می‌گذارد.
+            </p>
+          </div>
+          <img
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/baggage/baggage@3x-bda919ec.webp"
+            alt=""
+            class="w-[392px] h-[283.017px]"
+          />
+        </div>
+        <p>
+          یکی از ابزارهای بسیار مفید و کاربردی برای خرید اینترنتی بلیط هواپیما،
+          تقویم قیمتی است. با استفاده از تقویم قیمتی شما می‌توانید کمترین و
+          بیشترین قیمت بلیط پرواز را در روزهای قبل و بعد از آن تاریخ مشاهده
+          کنید. در صورتی که اصرار به خرید بلیط هواپیما در یک روز خاص نداشته
+          باشید، این امکان به شما کمک می‌کند تا مبلغ بلیط هواپیما برایتان با
+          مبلغ به صرفه تری تمام شود.
+        </p>
+        <p>
+          علاوه بر این، با استفاده از فیلترهای کنار صفحه می‌توانید ایرلاین مورد
+          نظرتان را انتخاب کنید. ضمنا می‌توانید، بلیط چارتر هواپیما یا سیستمی را
+          فعال کنید تا فقط یکی از این دو نوع بلیط را مشاهده کنید. بلیط هواپیما
+          خارجی ،کلاس پروازی و زمان پرواز هم از دیگر گزینه‌هایی است که با انتخاب
+          آنها، تعداد بلیط ها محدودتر و رزرو بلیط هواپیما برای شما آسانتر
+          می‌شود.
+        </p>
+        <p>
+          برای پرداخت هزینه می‌توانید از کارت شتاب استفاده کنید. پس از پرداخت،
+          خرید اینترنتی بلیط هواپیما با موفقیت انجام میشود و بلیط به ایمیل شما
+          ارسال میشود. همچنین در همه این مراحل، پشتیبانی علی‌بابا در کنار شماست
+          تا هر زمانی که سوال یا مشکلی داشتید، 24 ساعته پاسخگوی شما باشد.
+        </p>
+        <p class="font-iransans-bold">امکان استرداد بلیط هواپیما</p>
+        <p>
+          یکی دیگر از امکانات علی‌بابا استرداد آنلاین بلیط هواپیما (کنسلی بلیط)
+          است. در صورتی که پس از رزرو بلیط هواپیما برنامه سفرتان تغییر کرده، به
+          راحتی می‌توانید طبق قوانین کنسلی پرواز داخلی، بلیط هواپیمای خود را
+          کنسل کنید. پس از استرداد، پول شما در کمترین زمان ممکن به حسابتان
+          برگردانده می‌شود. شما برای خرید اینترنتی بلیط هواپیما از علی‌بابا
+          می‌توانید از تلفن همراه، رایانه شخصی یا تبلت استفاده کنید. علی‌بابا در
+          همه این ابزارها کاربرپسند است و شما خریدی آسان را تجربه خواهید کرد.
+          همچنین امکان نصب و استفاده از اپلیکیشن علی‌بابا برای گوشی های اندروید
+          و آیفون وجود دارد.
+        </p>
+        <p class="font-iransans-bold">
+          رزرو بلیط هواپیما از معتبرترین ایرلاین‌ها
+        </p>
+        <p>
+          شما برای خرید بلیط هواپیما از بین ایرلاینهای مختلف حق انتخاب دارید و
+          می‌توانید از ایرلاینهای ماهان، زاگرس، کیش ایر، قشم ایر، آسمان، کاسپین،
+          تابان، وارش یا معراج، بلیط پرواز داخلی خود را خریداری کنید.
+        </p>
+        <p>
+          هر یک از این ایرلاین ها ویژگیها و مشخصات خود را دارند. برخی امکانات و
+          خدمات رفاهی بیشتر دارند و برخی دیگر بلیط هواپیما را با قیمت به صرفه
+          تری ارائه می‌دهند. زمانی که در علی‌بابا لیست بلیط تمام این ایرلاین ها
+          را مشاهده می‌کنید، می‌توانید از بین آنها انتخاب کنید.
+        </p>
+        <p class="font-iransans-bold">
+          علی‌بابا: رتبه یک خرید اینترنتی بلیط سفر
+        </p>
+        <p>
+          علی‌بابا طی این سالها، اعتبار زیادی نزد مشتریان خود کسب کرده است. طبق
+          نظرسنجی، 97.2 درصد از مشتریان علی‌بابا از خدمات این سامانه راضی
+          بوده‌اند و استفاده از آن را به دوستان و آشنایان خود پیشنهاد داده‌اند.
+          سرعت سادگی خرید اینترنتی بلیط هواپیما، اعتبار و خوشنامی، امکان استرداد
+          آنلاین بلیط هواپیما و پشتیبانی 24 ساعته در تمام روزهای هفته، رتبه یک
+          فروش بلیط را از آنِ علی‌بابا کرده است.
+        </p>
+        <p>
+          علی‌بابا طی این سالها، اعتبار زیادی نزد مشتریان خود کسب کرده است. طبق
+          نظرسنجی، 97.2 درصد از مشتریان علی‌بابا از خدمات این سامانه راضی
+          بوده‌اند و استفاده از آن را به دوستان و آشنایان خود پیشنهاد داده‌اند.
+          سرعت سادگی خرید اینترنتی بلیط هواپیما، اعتبار و خوشنامی، امکان استرداد
+          آنلاین بلیط هواپیما و پشتیبانی 24 ساعته در تمام روزهای هفته، رتبه یک
+          فروش بلیط را از آنِ علی‌بابا کرده است.
+        </p>
+      </div>
+    </main>
+
+    <hr class="w-full mt-7" />
+    <div
+      class="flex w-[80%] flex-row justify-around mx-auto child:flex child:items-center"
+    >
+      <div>
+        <img
+          src="data:image/webp;base64,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"
+          alt=""
+          class="w-[89px] h-[89px]"
+        />
+        <div class="flex flex-col gap-1">
+          <h1 class="font-iransans-bold">رتبه یک سفر</h1>
+          <p class="font-iransans-light">
+            معتبرترین عرضه‌کننده محصولات گردشگری در ایران
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="data:image/webp;base64,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"
+          alt=""
+          class="w-[89px] h-[89px]"
+        />
+        <div class="flex flex-col gap-1">
+          <h1 class="font-iransans-bold">همسفر هر سفر</h1>
+          <p class="font-iransans-light">
+            ارائه تمامی خدمات سفر (پرواز، قطار، اتوبوس، هتل و تور)
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="data:image/webp;base64,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"
+          alt=""
+          class="w-[89px] h-[89px]"
+        />
+        <div class="flex flex-col gap-1">
+          <h1 class="font-iransans-bold">همسفر همه لحظات</h1>
+          <p class="font-iransans-light">
+            پشتیبانی و همراهی ۲۴ ساعته در تمامی مراحل سفر
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr class="w-[80%] mx-auto" />
+
+
+    <footer class="bg-white dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              علی‌بابا
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline"> <p>درباره ما</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">تماس با ما</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">چرا علی‌بابا</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">علی بابا پلاس</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">بیمه مسافرتی</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">مجله علی‌بابا</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              خدمات مشتریان
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">مرکز پشتیبانی آنلاین</a>
+              </li>
+
+              <li class="mb-4">
+                <a href="#" class="hover:underline">راهنمای خرید</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">راهنمای استرداد </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">قوانین و مقررات </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">پرسش و پاسخ </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              اطلاعات تکمیلی
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline"> فروش سازمانی </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline"> همکاری با آژانس‌ها </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline"> فرصت‌های شغلی </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline"> سنجش رضایت مندی </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap m-4 items-center justify-around">
+            <img
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/shawl_logotype-d6b14ca0.svg"
+              alt=""
+              class="w-[146px]"
+            />
+
+            <span
+              >دفتر پشتیبانی: اکباتان، نبش اتوبان لشگری، کوی بیمه، خیابان بیمه
+              چهارم، بن‌بست گل‌ها، پلاک 1
+            </span>
+            <div>
+              <div
+                class="child:w-[69px] flex gap-4 child:border child:border-black child:rounded-3xl child:p-3"
+              >
+                <img
+                  src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/state-airline-f45c55b2.svg"
+                  alt=""
+                />
+                <img
+                  src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/passenger-rights-48368f81.svg"
+                  alt=""
+                />
+                <img
+                  src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/samandehi-6e2b448a.png"
+                  alt=""
+                />
+                <img
+                  src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/ecunion-35c3c933.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-6 md:flex md:items-center md:justify-between border-t"
+        >
+          <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center"
+            >کلیه حقوق این سرویس (وب‌سایت و اپلیکیشن‌های موبایل) محفوظ و متعلق
+            به شرکت سفرهای علی‌بابا می‌باشد. (نسخه 3.6.4) Reserved.
+          </span>
+          <div
+            class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse"
+          >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16"
+              >
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
